@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Everyday Agenda</title>
+</head>
+<body>
+    <div class="grid grid--column">
+        <div class="grid-manager"></div>
+        <nav class="navbar">
+            <a href="#" class="nav__title">Everyday Agenda</a>
+            <ul class="navbar__nav">
+                <li data-tab-target="#schedule-table" class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="link-text">Schedule Table</span>
+                        <span class="icon-container">
+                            <img src="assets/table.svg" class="icon icon-white" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li data-tab-target="#tasks-projects" class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="link-text">Tasks & Projects</span>
+                        <span class="icon-container">
+                            <img src="assets/tasks.svg" class="icon icon-white" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li data-tab-target="#priority-matrix" class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="link-text">Priority Matrix</span>
+                        <span class="icon-container">
+                            <img src="assets/matrix.svg" class="icon icon-white" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li data-tab-target="#calendar" class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="link-text">Calendar</span>
+                        <span class="icon-container">
+                            <img src="assets/calendar.svg" class="icon icon-white" alt="">
+                        </span>
+                    </a>
+                </li>         
+            </ul>
+        </nav>
+        <section>
+            <div class="container">
+                <div class="tab-content">
+                    <div class="block block--schedule-table tab-active" id="schedule-table" data-tab-content>
+                        <div class="block block--holiday" data-holiday>
+                            <h1 class="block--holiday__text">SIK ASIK! Libur~</h1>
+                        </div>
+                        <table class="table" data-schedule-table>
+                            <thead class="table__header">
+                                <tr>
+                                    <th class="table__heading" colspan="3" data-schedule-heading></th>
+                                </tr>
+                            </thead>
+                            <tbody class="table__content" data-schedule-table-body>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="block block--tasks-projects" id="tasks-projects" data-tab-content>
+                        <div class="block block--no-tasks" data-no-tasks>
+                            <h1 class="block--no-tasks__text">Woohoo! Gaada tugas~</h1>
+                        </div>
+                        <table class="table" data-table-tasks-projects>
+                            <thead class="table__header">
+                                <tr>
+                                    <th class="table__heading" colspan="3">Tasks & Projects</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table__content" data-tasks-projects></tbody>
+                        </table>
+                    </div>
+                    <div class="block block--matrix" id="priority-matrix" data-tab-content data-priority-matrix>
+                        <div class="block--matrix__status block--matrix__status-one">
+                            <h1 class="block--matrix__status-heading">Urgent And Important</h1>
+                            <ul class="block--matrix__list" data-status-tasks></ul>
+                        </div>
+                        <div class="block--matrix__status block--matrix__status-two">
+                            <h1 class="block--matrix__status-heading">Not Urgent, But Important</h1>
+                            <ul class="block--matrix__list" data-status-tasks></ul>
+                        </div>
+                        <div class="block--matrix__status block--matrix__status-three">
+                            <h1 class="block--matrix__status-heading">Urgent, But Not Important</h1>
+                            <ul class="block--matrix__list" data-status-tasks></ul>
+                        </div>
+                        <div class="block--matrix__status block--matrix__status-four">
+                            <h1 class="block--matrix__status-heading">Not Urgent And Not Important</h1>
+                            <ul class="block--matrix__list" data-status-tasks></ul>
+                        </div>
+                    </div>
+                    <div class="block block--calendar" id="calendar" data-tab-content>
+                        <h1 class="block--calendar__year" data-calendar-year>2022</h1>
+                        <div class="calendar">
+                            <div class="calendar__events">
+                                <div class="calendar__event-side">
+                                    <div class="calendar__event-date">
+                                        <div class="event-date" data-calendar-day>19</div>
+                                        <div class="event-month" data-calendar-month>Jul</div>
+                                    </div>
+                                </div>
+                                <div class="calendar__event-content">
+                                    <h1 class="calendar__event-title" data-event-name>Visit Campus</h1>
+                                    <div class="calendar__event-description">
+                                        <p class="event-description" data-event-desc>Lokasi: Universitas Prasetiya Mulia</p>
+                                        <p class="event-description" data-event-desc>Seragam: Selasa Batik</p>
+                                    </div>
+                                    <div class="calendar__event-time">
+                                        <span class="icon-container">
+                                            <img src="assets/clock.svg" class="icon" alt="">
+                                        </span>
+                                        <span class="event-time" data-event-time>07:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
