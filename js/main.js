@@ -251,7 +251,10 @@ const WEEK_DATES = [
     "18 July 2022", "19 July 2022", "20 July 2022", "21 July 2022", "22 July 2022",
     "23 July 2022", "24 July 2022"
 ]
-const TASKS = []
+const TASKS = [
+    new Task("Project 3D Sel", "16 September 2022", 0.9, 0.9, 10),
+    new Task("Print Wawancara Kerja B. Indo", "22 July 2022", 0.1, 0.5, 0.5)
+]
 const FILTERED_TASKS = TASKS.filter((task) => task.deadline.getTime() - CURRENT_DATE.getTime() > 0)
                              .sort((a, b) => b.priority - a.priority)
 
