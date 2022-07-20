@@ -190,7 +190,6 @@ function formatDate(date) {
 TABS.forEach(tab => {
     tab.addEventListener("click", () => {
         const target = document.querySelector(tab.dataset.tabTarget)
-        console.log(target)
         TAB_CONTENTS.forEach(tabContent => {
             tabContent.classList.remove("tab-active")
             tabContent.classList.remove("tab-active-grid")
