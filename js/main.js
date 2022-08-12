@@ -208,8 +208,12 @@ TABS.forEach(tab => {
 })
 
 const SCHEDULE_TIMES = [
-    ["07.00 - 08.00", "08.00 - 09.00", "09.00 - 10.00", "10.00 - 12.00"],
-    ["07.00 - 13.30"],
+    ["07.00 - 07.15", "07.15 - 07.55", "07.55 - 08.35", "08.35 - 09.15",
+        "09.15 - 09.55", "09.55 - 10.15", "10.15 - 10.55", "10.55 - 11.35",
+        "11.35 - 12.15", "12.15 - 12.45", "12.45 - 13.25", "13.25 - 14.05", "14.05 - 14.45"],
+    ["07.00 - 07.15", "07.15 - 07.55", "07.55 - 08.35", "08.35 - 09.15",
+        "09.15 - 09.55", "09.55 - 10.15", "10.15 - 10.55", "10.55 - 11.35",
+        "11.35 - 12.15", "12.15 - 12.45", "12.45 - 13.25", "13.25 - 14.05", "14.05 - 14.45"],
     ["07.00 - 07.15", "07.15 - 07.55", "07.55 - 08.35", "08.35 - 09.15",
         "09.15 - 09.55", "09.55 - 10.15", "10.15 - 10.55", "10.55 - 11.35",
         "11.35 - 12.15", "12.15 - 12.45", "12.45 - 13.25", "13.25 - 14.05", "14.05 - 14.45"],
@@ -220,40 +224,37 @@ const SCHEDULE_TIMES = [
         "09.15 - 09.55", "09.55 - 10.15", "10.15 - 10.55", "10.55 - 11.35",
         "11.35 - 12.15", "12.15 - 12.45", "12.45 - 13.25", "13.25 - 14.05", "14.05 - 14.45"]
 ]
-const SCHEDULE_DATA = [
-    ["Upacara", "Pengenalan", "Istirahat", "Briefing Kelas"],
-    ["Visit Campus"],
-    ["B. Indonesia", "B. Indonesia", "HSK", "HSK",
-        "Istirahat 1", "Kimia", "Kimia", "Fisika",
-        "Istirahat 2", "Fisika", "Biologi", "Biologi"],
-    ["Mat. Umum", "Mat. Umum", "B. Inggris", "Seni Musik",
-        "Istirahat 1", "TIK", "TIK", "Mandarin",
-        "Istirahat 2", "Mandarin", "IELTS", "IELTS"],
-    ["B. Indonesia", "B. Indonesia", "Fisika", "Fisika",
-        "Istirahat 1", "B. Inggris", "B. Inggris", "Pend. Agama",
-        "Istirahat 2", "Pend. Agama", "Mat Peminatan", "Mat Peminatan"]
+const SCHEDULE_DATA = [ 
+    ["Mat Peminatan", "Mat Peminatan", "Kimia", "Kimia", "Istirahat", "Sejarah Indo", 
+    "Sejarah Indo", "Seni Rupa", "Istirahat", "Dharma Class", "KWH", "KWH"],
+    ["Biologi", "Biologi", "Penjas", "Penjas", "Istirahat", "Mat. Umum", "Mat.Umum",
+    "PPKN", "Istirahat", "PPKN", "Mandarin", "Mandarin"],
+    ["B. Indo", "B. Indo", "HSK", "HSK", "Istirahat", "Kimia", "Kimia", "Fisika",
+    "Istirahat", "Fisika", "Biologi", "Biologi"],
+    ["Mat. Umum", "Mat. Umum", "English", "Seni Musik", "Istirahat", "TIK", "TIK",
+    "Mandarin", "Istirahat", "Mandarin", "IELTS", "IELTS", "IELTS"],
+    ["B. Indo", "B. Indo", "Fisika", "Fisika", "Istirahat", "English", "English",
+    "Agama", "Istirahat", "Agama", "Mat. Peminatan", "Mat. Peminatan"]
 ]
 const TEACHER_NAMES = [
-    ["Guru Pendamping", "Guru Pendamping", "Guru Pendamping", "Guru Pendamping"],
-    ["Guru Pendamping"],
-    ["Bu Indah", "Bu Indah", "Laoshi Rosy", "Laoshi Rosy",
-        "-", "Pak Trisman", "Pak Trisman", "Pak Yuda",
-        "-", "Pak Yuda", "Bu Yohana", "Bu Yohana"],
-    ["Pak Yuda", "Pak Yuda", "Mr Karel", "Pak Nana",
-        "-", "Bu Karti", "Bu Karti", "Laoshi Rosy",
-        "-", "Laoshi Rosy", "Mr Day", "Mr Day"],
-    ["Bu Indah", "Bu Indah", "Pak Yuda", "Pak Yuda",
-        "-", "Mr Karel", "Mr Karel", "Pak Agung",
-        "-", "Pak Agung", "Pak Rocky", "Pak Rocky"]
+    ["Pak Rocky", "Pak Rocky", "Pak Trisman", "Pak Trisman", "-", "Pak Gom", 
+    "Pak Gom", "Pak Hanta", "-", "Pak Agung", "Pak If", "Pak If"],
+    ["Bu Yo", "Bu Yo", "Pak Wagi", "Pak Wagi", "-", "Pak Rocky", "Pak Rocky",
+    "Pak Pedro", "-", "Pak Pedro", "Chen Laoshi", "Chen Laoshi"],
+    ["Bu Indah", "Bu Indah", "Laoshi Rosy", "Laoshi Rosy", "-", "Pak Trisman", "Pak Trisman", 
+    "Pak Yuda", "-", "Pak Yuda", "Bu Yo", "Bu Yo"],
+    ["Pak Rocky", "Pak Rocky", "Mr. Karel", "Pak Nana", "-", "Bu Karti", "Bu Karti",
+    "Chen Laoshi", "-", "Chen Laoshi", "Mr. Day", "Mr. Day"],
+    ["Bu Indah", "Bu Indah", "Pak Yuda", "Pak Yuda", "-", "Mr. Karel", "Mr. Karel",
+    "Pak Agung", "-", "Pak Agung", "Pak Rocky", "Pak Rocky"]
 ]
 const WEEK_DATES = [
-    "18 July 2022", "19 July 2022", "20 July 2022", "21 July 2022", "22 July 2022",
-    "23 July 2022", "24 July 2022"
+    "8 August 2022", "9 August 2022", "10 August 2022", "11 August 2022", "12 August 2022",
+    "13 August 2022", "14 August 2022"
 ]
 const TASKS = [
     new Task("Project 3D Sel", "16 September 2022", 0.9, 0.9, 10),
     new Task("Project Presentasi IELTS", "15 September 2022", 0.9, 0.9, 6)
-
 ]
 const FILTERED_TASKS = TASKS.filter((task) => task.deadline.getTime() - CURRENT_DATE.getTime() > 0)
     .sort((a, b) => b.priority - a.priority)
