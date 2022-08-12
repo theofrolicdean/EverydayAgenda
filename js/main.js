@@ -225,27 +225,27 @@ const SCHEDULE_TIMES = [
         "11.35 - 12.15", "12.15 - 12.45", "12.45 - 13.25", "13.25 - 14.05", "14.05 - 14.45"]
 ]
 const SCHEDULE_DATA = [ 
-    ["Mat Peminatan", "Mat Peminatan", "Kimia", "Kimia", "Istirahat", "Sejarah Indo", 
+    ["Jam Wali", "Mat Peminatan", "Mat Peminatan", "Kimia", "Kimia", "Istirahat", "Sejarah Indo", 
     "Sejarah Indo", "Seni Rupa", "Istirahat", "Dharma Class", "KWH", "KWH"],
-    ["Biologi", "Biologi", "Penjas", "Penjas", "Istirahat", "Mat. Umum", "Mat.Umum",
+    ["Jam Wali", "Biologi", "Biologi", "Penjas", "Penjas", "Istirahat", "Mat. Umum", "Mat.Umum",
     "PPKN", "Istirahat", "PPKN", "Mandarin", "Mandarin"],
-    ["B. Indo", "B. Indo", "HSK", "HSK", "Istirahat", "Kimia", "Kimia", "Fisika",
+    ["Jam Wali", "B. Indo", "B. Indo", "HSK", "HSK", "Istirahat", "Kimia", "Kimia", "Fisika",
     "Istirahat", "Fisika", "Biologi", "Biologi"],
-    ["Mat. Umum", "Mat. Umum", "English", "Seni Musik", "Istirahat", "TIK", "TIK",
+    ["Jam Wali", "Mat. Umum", "Mat. Umum", "English", "Seni Musik", "Istirahat", "TIK", "TIK",
     "Mandarin", "Istirahat", "Mandarin", "IELTS", "IELTS", "IELTS"],
-    ["B. Indo", "B. Indo", "Fisika", "Fisika", "Istirahat", "English", "English",
+    ["Jam Wali", "B. Indo", "B. Indo", "Fisika", "Fisika", "Istirahat", "English", "English",
     "Agama", "Istirahat", "Agama", "Mat. Peminatan", "Mat. Peminatan"]
 ]
 const TEACHER_NAMES = [
-    ["Pak Rocky", "Pak Rocky", "Pak Trisman", "Pak Trisman", "-", "Pak Gom", 
+    ["Pak Yuda", "Pak Rocky", "Pak Rocky", "Pak Trisman", "Pak Trisman", "-", "Pak Gom", 
     "Pak Gom", "Pak Hanta", "-", "Pak Agung", "Pak If", "Pak If"],
-    ["Bu Yo", "Bu Yo", "Pak Wagi", "Pak Wagi", "-", "Pak Rocky", "Pak Rocky",
+    ["Pak Yuda", "Bu Yo", "Bu Yo", "Pak Wagi", "Pak Wagi", "-", "Pak Rocky", "Pak Rocky",
     "Pak Pedro", "-", "Pak Pedro", "Chen Laoshi", "Chen Laoshi"],
-    ["Bu Indah", "Bu Indah", "Laoshi Rosy", "Laoshi Rosy", "-", "Pak Trisman", "Pak Trisman", 
+    ["Pak Yuda", "Bu Indah", "Bu Indah", "Laoshi Rosy", "Laoshi Rosy", "-", "Pak Trisman", "Pak Trisman", 
     "Pak Yuda", "-", "Pak Yuda", "Bu Yo", "Bu Yo"],
-    ["Pak Rocky", "Pak Rocky", "Mr. Karel", "Pak Nana", "-", "Bu Karti", "Bu Karti",
+    ["Pak Yuda", "Pak Rocky", "Pak Rocky", "Mr. Karel", "Pak Nana", "-", "Bu Karti", "Bu Karti",
     "Chen Laoshi", "-", "Chen Laoshi", "Mr. Day", "Mr. Day"],
-    ["Bu Indah", "Bu Indah", "Pak Yuda", "Pak Yuda", "-", "Mr. Karel", "Mr. Karel",
+    ["Pak Yuda", "Bu Indah", "Bu Indah", "Pak Yuda", "Pak Yuda", "-", "Mr. Karel", "Mr. Karel",
     "Pak Agung", "-", "Pak Agung", "Pak Rocky", "Pak Rocky"]
 ]
 const WEEK_DATES = [
